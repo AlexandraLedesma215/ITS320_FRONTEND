@@ -1,0 +1,68 @@
+<div class="flex">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-pink-500 text-white h-screen p-6 fixed">
+    <div class="text-4xl font-bold mb-8">My Portfolio</div>
+    <nav>
+      <ul class="space-y-4">
+        <li><a href="#home" class="hover:text-pink-300">Home</a></li>
+        <li><a href="#about" class="hover:text-pink-300">About</a></li>
+        <li><a href="#projects" class="hover:text-pink-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-pink-300">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="ml-64 flex-1 p-6">
+    <header class="bg-pink-700 text-white p-6 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-4xl font-bold">My Portfolio</h1>
+      </div>
+    </header>
+
+    <section id="home" class="container mx-auto my-16 p-8 bg-white shadow-lg rounded-lg">
+      <h2 class="text-3xl font-semibold mb-4">Home</h2>
+      <img src="assets/my-image.jpg" alt="My Image" class="w-40 h-40 rounded-full mx-auto mb-6">
+      <p class="text-lg text-center">Welcome to my portfolio! Here you will find information about me and my projects.</p>
+      <!-- Display Quotes Component -->
+
+    </section>
+
+    <section id="about" class="container mx-auto my-16 p-8 bg-white shadow-lg rounded-lg">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-lg">This is the about section where you can describe yourself. Share your background, skills, and interests.</p>
+    </section>
+
+    <section id="projects" class="container mx-auto my-16 p-8 bg-white shadow-lg rounded-lg">
+      <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div id="project1" class="bg-pink-100 p-6 rounded-lg shadow-md hover:bg-pink-200 transition duration-300">
+          <img src="assets/project1.jpg" alt="Project 1" class="w-full h-40 object-cover rounded-t-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Project 1</h3>
+          <p class="text-lg">Description of project 1.</p>
+        </div>
+        <div id="project2" class="bg-pink-100 p-6 rounded-lg shadow-md hover:bg-pink-200 transition duration-300">
+          <img src="assets/project2.jpg" alt="Project 2" class="w-full h-40 object-cover rounded-t-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Project 2</h3>
+          <p class="text-lg">Description of project 2.</p>
+        </div>
+        <div id="project3" class="bg-pink-100 p-6 rounded-lg shadow-md hover:bg-pink-200 transition duration-300">
+          <img src="assets/project3.jpg" alt="Project 3" class="w-full h-40 object-cover rounded-t-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Project 3</h3>
+          <p class="text-lg">Description of project 3.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container mx-auto my-16 p-8 bg-white shadow-lg rounded-lg">
+      <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+      <p class="text-lg">This is the contact section where you can provide your contact details. Feel free to reach out to me!</p>
+    </section>
+
+    <footer class="bg-pink-700 text-white p-6 mt-16">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</div>
