@@ -1,22 +1,15 @@
-<div class="book-container">
-    
-    <h1 class="title">Quotes of Life</h1>
+<p class="quotes-title">Quotes of Life</p>
 
-   
-    <div class="grid-container">
-        <div *ngFor="let quote of quotes" class="quote-card" [ngClass]="{
-                'highlighted': quote.highlighted,
-                'default': !quote.highlighted
-             }">
-            <div class="quote-content">
-                <p class="quote-text">"{{quote.quote}}"</p>
-                <div class="divider"></div>
-                <ul class="quote-details">
-                    <li class="author"><span class="label">Author:</span> {{quote.author}}</li>
-                    <li class="title"><span class="label">Title:</span> {{quote.title}}</li>
-                    <li class="published"><span class="label">Published:</span> {{quote.published}}</li>
-                </ul>
-            </div>
-        </div>
+<div class="quotes-container">
+  <div *ngFor="let quote of quotes" class="quote-card" [ngClass]="{'highlighted-quote': quote.highlighted}">
+    <div class="quote-content">
+      <p class="quote-text">"{{ quote.quote }}"</p>
+      <div class="divider"></div>
+      <ul class="quote-details">
+        <li class="quote-author"><span>Author:</span> {{ quote.author }}</li>
+        <li class="quote-title"><span>Title:</span> {{ quote.title }}</li>
+        <li class="quote-published"><span>Published:</span> {{ quote.published }}</li>
+      </ul>
     </div>
+  </div>
 </div>

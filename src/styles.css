@@ -1,2 +1,32 @@
 @import "tailwindcss";
 
+quotes-title {
+    @apply text-2xl font-bold text-center text-blue-700 mb-6 tracking-wide;
+  }
+  
+  .quotes-container {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-4 md:mx-8 lg:mx-auto max-w-6xl;
+  }
+  
+  .quote-card {
+    @apply bg-white p-6 rounded-lg border border-gray-300 shadow-md transition-all hover:shadow-lg transform hover:scale-105;
+  }
+  
+  .highlighted-quote {
+    @apply bg-red-500 text-white border-none;
+  }
+  
+  .quote-text {
+    @apply text-lg italic mb-2 text-gray-800;
+  }
+  
+  .quote-details {
+    @apply text-sm text-gray-600;
+  }
+  
+  .quote-author span,
+  .quote-title span,
+  .quote-published span {
+    @apply font-bold;
+  }
+  
